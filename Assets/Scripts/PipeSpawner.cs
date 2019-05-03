@@ -5,10 +5,10 @@ using UnityEngine;
 public class PipeSpawner : MonoBehaviour
 {
     [SerializeField] GameObject pipe;
-    [SerializeField] float spawnTime; 
-    [SerializeField] float startingX; 
-    [SerializeField] float minY; 
-    [SerializeField] float maxY;
+    [SerializeField] float spawnTime = 1.5f; 
+    [SerializeField] float startingX = 12f; 
+    [SerializeField] float minY = -2.5f; 
+    [SerializeField] float maxY = 2.5f;
 
     // Start is called before the first frame update
     void Start()
