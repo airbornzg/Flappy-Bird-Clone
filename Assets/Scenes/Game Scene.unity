@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 286992624}
   - component: {fileID: 286992623}
   - component: {fileID: 286992625}
+  - component: {fileID: 286992626}
   m_Layer: 0
   m_Name: player0
   m_TagString: Untagged
@@ -311,6 +312,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flapStrength: 12
   myGame: {fileID: 1740666582}
+--- !u!114 &286992626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286992620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b014a5fc02004abbb6e976378902cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySprites:
+  - {fileID: 21300000, guid: 5882787b63b2f405f842ddfa1dabbeba, type: 3}
+  - {fileID: 21300000, guid: 79dab49d3decb4106be0d0deb0740ec3, type: 3}
+  - {fileID: 21300000, guid: 34faaa6ec7d264041a13150ad989a91f, type: 3}
+  - {fileID: 21300000, guid: 23b3c87be8aeb4f36b70d766f4c10c1f, type: 3}
+  mySpriteRenderer: {fileID: 0}
+  framesPerSecond: 12
+  secondsPerFrame: 0
+  currentFrame: 0
 --- !u!1 &419098763
 GameObject:
   m_ObjectHideFlags: 0
