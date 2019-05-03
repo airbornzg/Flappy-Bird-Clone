@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] float flapStrength = 1f;
-
+    [SerializeField] GameControl myGame;
     Rigidbody2D myRigidbody2D; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,10 @@ public class PlayerControl : MonoBehaviour
         {
             myRigidbody2D.velocity = Vector2.up * flapStrength;
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        myGame.GameOver();
     }
 }

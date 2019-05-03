@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -24,6 +25,6 @@ public class GameControl : MonoBehaviour
     public void GameOver()
     {
         PlayerPrefs.SetFloat("playerScore", score);
-        //go to results scene
+        SceneManager.LoadScene("Lose Scene");
     }
 }
